@@ -24,12 +24,17 @@ export default function Menu() {
                 </Link>
 
                 {/* Liên kết đến trang giỏ hàng - có cấu trúc tương tự như liên kết đăng nhập */}
-                <Link href="/cart" className="header-button" aria-label="Cart">
-                    {/* Biểu tượng giỏ hàng */}
-                    <ShoppingCartIcon className="h-6 w-6  mx-auto" />
-                    {/* Nhãn văn bản cho giỏ hàng */}
-                    <span className="font-bold text-sm">Cart</span>
-                </Link>
+                <Link
+                    href="/cart"
+                    className="header-button flex items-center gap-1"
+                    aria-label="Cart"
+                    >
+                    {/* Biểu tượng giỏ hàng - luôn căn giữa theo chiều cao */}
+                    <ShoppingCartIcon className="h-8 w-8" />
+
+                    {/* Nhãn văn bản - bám sát lề dưới */}
+                    <span className="font-bold text-sm leading-none self-end">Cart</span>
+                    </Link>
             </nav>
         </div>
     );

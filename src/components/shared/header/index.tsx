@@ -54,9 +54,9 @@ export default function Header() {
                 {/* Nút menu "All" với biểu tượng */}
                 <Button
                     variant='ghost'
-                    className=' dark header-button flex items-center gap-1 text-base [&_svg]:size-10  rounded-none'
+                    className='header-button flex items-center gap-1 text-base rounded-none'
                 >
-                    <MenuIcon  />
+                    <MenuIcon  className="text-white" />
                     All
                 </Button>
                 

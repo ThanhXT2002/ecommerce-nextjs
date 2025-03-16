@@ -31,7 +31,11 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --font-sans: var(--font-open-sans); /* Open Sans là mặc định */
+    --font-geist: var(--font-geist-sans); /* Geist Sans (dùng khi cần) */
+    --font-mono: var(--font-geist-mono); /* Geist Mono (dùng cho code) */
   }
+
 
   .dark {
     --background: 20 14.3% 4.1%;
@@ -58,6 +62,10 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  body {
+    font-family: var(--font-sans), sans-serif; /* Open Sans mặc định */
   }
 }
 
