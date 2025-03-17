@@ -512,4 +512,4 @@ CREATE TABLE `systems` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-tiếp tục comment giải thích chi tiết băng tiếng việt, cho người mới học react
+comment giải thích chi tiết vào code băng tiếng việt, cho người mới học react
