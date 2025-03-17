@@ -43,8 +43,8 @@ export function HomeCard({ cards }: { cards: CardItem[] }) {
             </div>
           </CardContent>
           {card.link && (
-            <CardFooter>
-              <Link href={card.link.href} className="block">
+            <CardFooter className="pb-4">
+              <Link href={card.link.href} className="block bg-gray-300 px-3 py-1 text-center rounded-md hover:bg-primary">
                 {card.link.text}
               </Link>
             </CardFooter>

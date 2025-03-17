@@ -4,6 +4,8 @@
 
 @theme {
   --color-primary: #FFB400;
+  --color-primary-foreground: 26 83.3% 14.1%;
+  
 }
 
 @layer base {
