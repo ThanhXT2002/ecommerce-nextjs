@@ -11,6 +11,8 @@ import { Separator } from '@/components/ui/separator'
 import ProductSlider from '@/components/shared/product/product-slider'
 import Rating from '@/components/shared/product/rating'
 import { notFound } from 'next/navigation'
+import BrowsingHistoryList from '@/components/shared/browsing-history-list'
+import AddToBrowsingHistory from '@/components/shared/product/add-to-browsing-history'
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>
@@ -62,6 +64,7 @@ export default async function ProductDetails(props: {
 
   return (
     <div>
+      <AddToBrowsingHistory id={product._id} category={product.category} />
       <section>
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {/* Product Gallery - Left Column */}
@@ -153,6 +156,10 @@ export default async function ProductDetails(props: {
           />
         </section>
       )}
+
+    <section>
+      <BrowsingHistoryList className='mt-10' />
+    </section>
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import BrowsingHistoryList from "@/components/shared/browsing-history-list";
 import { HomeCard } from "@/components/shared/home/home-card"; // Import component HomeCard để hiển thị các thẻ sản phẩm
 import { HomeCarousel } from "@/components/shared/home/home-carousel"; // Import component HomeCarousel để hiển thị slider ảnh
 import ProductSlider from "@/components/shared/product/product-slider";
@@ -94,13 +95,13 @@ export default async function HomePage() {
         {/* Render component HomeCard với dữ liệu đã tạo ở trên */}
         <HomeCard cards={cards} />
         <Card className='w-full rounded-none'>
-          <CardContent className='p-4 items-center gap-3 bg-white'>
+          <CardContent className='items-center gap-3 bg-white'>
             <ProductSlider title={"Today's Deals"} products={todaysDeals} />
           </CardContent>
         </Card>
 
         <Card className='w-full rounded-none'>
-           <CardContent className='p-4 items-center gap-3 bg-white'>
+           <CardContent className='items-center gap-3 bg-white'>
              <ProductSlider
                title='Best Selling Products'
                products={bestSellingProducts}
@@ -110,6 +111,10 @@ export default async function HomePage() {
          </Card>
 
       </div>
+      <div className=' bg-gray-200'>
+        <BrowsingHistoryList />
+      </div>
+      
     </>
   );
 }
