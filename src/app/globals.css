@@ -2,7 +2,9 @@
 
 @plugin "tailwindcss-animate";
 
-
+@theme {
+  --color-primary: #FFB400;
+}
 
 @layer base {
   :root {
@@ -77,6 +79,10 @@
 
   .h1-bold {
     @apply text-2xl font-bold lg:text-3xl;
+  }
+
+  .h2-bold {
+    @apply font-bold text-lg lg:text-xl;
   }
 
   button{
