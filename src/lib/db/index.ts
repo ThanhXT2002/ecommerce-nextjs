@@ -1,4 +1,6 @@
 import mongoose from 'mongoose'
+
+
  
  // eslint-disable-next-line @typescript-eslint/no-explicit-any
  const cached = (global as any).mongoose || { conn: null, promise: null }
@@ -16,3 +18,5 @@ import mongoose from 'mongoose'
  
    return cached.conn
  }
+
+ 
