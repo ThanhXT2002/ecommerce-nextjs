@@ -14,7 +14,7 @@ import ProductSlider from './product/product-slider'
    const { products } = useBrowsingHistory()
    return (
      products.length !== 0 && (
-       <div className='bg-gray-200 py-2 px-2 md:px-5'>
+       <div className='bg-gray-200 '>
          <Separator className={cn('mb-4', className)} />
          <ProductList
            title={"Related to items that you've viewed"}

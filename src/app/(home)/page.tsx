@@ -87,9 +87,6 @@ export default async function HomePage() {
       
       {/* 
         Container chứa các phần sản phẩm
-        - md:p-4: thêm padding 4 đơn vị khi màn hình từ kích thước trung bình trở lên
-        - md:space-y-4: tạo khoảng cách 4 đơn vị giữa các phần tử con (trên trục y) từ màn hình trung bình
-        - bg-border: sử dụng màu nền được định nghĩa với biến --border trong tailwind
       */}
       <div className="md:p-4 md:space-y-4 bg-gray-200">
         {/* Render component HomeCard với dữ liệu đã tạo ở trên */}
@@ -111,7 +108,7 @@ export default async function HomePage() {
          </Card>
 
       </div>
-      <div className=' bg-gray-200'>
+      <div className=' bg-gray-200 px-2 md:px-4'>
         <BrowsingHistoryList />
       </div>
       

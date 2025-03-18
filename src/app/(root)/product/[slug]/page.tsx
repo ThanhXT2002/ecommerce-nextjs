@@ -158,7 +158,7 @@ export default async function ProductDetails(props: {
       )}
 
     <section>
-      <BrowsingHistoryList className='mt-10' />
+      <BrowsingHistoryList />
     </section>
     </div>
   )
