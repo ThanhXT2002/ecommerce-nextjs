@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { APP_DESCRIPTION, APP_NAME, APP_SLOGAN } from "@/lib/constants";
 import { Open_Sans } from "next/font/google";
+import ClientProviders from "@/components/shared/client-providers";
 
 const openSans = Open_Sans({
   subsets: ["latin"], // Hỗ trợ tiếng Latin
@@ -43,7 +44,7 @@ export default function RootLayout({
       <body
         className={`${openSans.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );
