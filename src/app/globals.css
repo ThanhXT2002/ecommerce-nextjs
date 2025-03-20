@@ -6,6 +6,7 @@
   --color-primary: #FFB400;
   --color-primary-foreground: 26 83.3% 14.1%;
   
+  
 }
 
 @layer base {
@@ -35,9 +36,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --font-sans: var(--font-open-sans); /* Open Sans là mặc định */
-    --font-geist: var(--font-geist-sans); /* Geist Sans (dùng khi cần) */
-    --font-mono: var(--font-geist-mono); /* Geist Mono (dùng cho code) */
+    --font-sans: 'Open Sans', system-ui, sans-serif;
+    --font-geist: 'Geist Sans', system-ui, sans-serif;
+    --font-mono: 'Geist Mono', monospace;
   }
 
 
@@ -69,7 +70,7 @@
   }
 
   body {
-    font-family: var(--font-sans), sans-serif; /* Open Sans mặc định */
+    font-family: var(--font-sans); /* Open Sans mặc định */
   }
 }
 
