@@ -36,7 +36,7 @@ export default async function SignIn(props: {
 
   return (
     <div className='w-full '>
-      <Card className='p-3 shadow-2xl'>
+      <Card className='p-3 shadow-2xl border-1 border-gray-200'>
         <CardHeader>
           <CardTitle className='text-2xl'>Sign In</CardTitle>
         </CardHeader>
