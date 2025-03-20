@@ -513,3 +513,4 @@ CREATE TABLE `systems` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 comment giải thích chi tiết vào code băng tiếng việt, cho người mới học react
+https://ecommerce-nextjs-git-main-tran-xuan-thanhs-projects.vercel.app
